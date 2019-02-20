@@ -1,0 +1,33 @@
+{
+  "name": "@jdachtera/storybook-simple-state",
+  "version": "1.0.0",
+  "description": "A simple way to add state to your stories",
+  "main": "pkg/dist-src/index.js",
+  "module": "src/index.js",
+  "repository": "https://github.com/jdachtera/storybook-simple-state.git",
+  "author": "Jascha Dachtera <jascha.dachtera@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",    
+    "@pika/plugin-standard-pkg": "^0.3.11",
+    "@storybook/addons": "^4.1.12",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-json-view": "^1.19.1"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  }
+}
