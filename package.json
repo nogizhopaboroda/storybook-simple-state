@@ -8,7 +8,7 @@
   "author": "Jascha Dachtera <jascha.dachtera@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@storybook/addons": "^4.1.12",
+    "@storybook/addons": ">=4.1.12",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-json-view": "^1.19.1"
