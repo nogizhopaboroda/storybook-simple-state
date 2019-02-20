@@ -8,19 +8,29 @@
   "author": "Jascha Dachtera <jascha.dachtera@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",    
-    "@pika/plugin-standard-pkg": "^0.3.11",
     "@storybook/addons": "^4.1.12",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-json-view": "^1.19.1"
   },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@pika/plugin-build-node": "^0.3.11",
+    "@pika/plugin-build-web": "^0.3.11",
+    "@pika/plugin-standard-pkg": "^0.3.11"
+  },
   "@pika/pack": {
     "pipeline": [
       [
         "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
       ]
     ]
   }
