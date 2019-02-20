@@ -1,6 +1,6 @@
 {
   "name": "@jdachtera/storybook-simple-state",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple way to add state to your stories",
   "main": "pkg/dist-src/index.js",
   "module": "src/index.js",
