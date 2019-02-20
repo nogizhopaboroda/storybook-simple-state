@@ -16,7 +16,6 @@ import { stateDecorator } from '@jdachtera/storybook-simple-state';
 
 import MyComponent from './MyComponent';
 
-
  storiesOf('<MyComponent>', module)
   .addDecorator(stateDecorator('Hello World'))
   .add('default', ({ default: [value, updateValue] }) => (
