@@ -8,7 +8,8 @@ USAGE:
 ------
 
 *MyComponent.story.jsx*
-`
+
+```
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { stateDecorator } from '@jdachtera/storybook-simple-state';
@@ -24,12 +25,12 @@ import MyComponent from './MyComponent';
       onChange={updateValue}
     />
   ));
-`
+```
 
 *.storybook/addons.js*
+```
 import { register as registerSimpleState } from '@jdachtera/storybook-simple-state';
+
 registerSimpleState();
-
-
-
+```
 
