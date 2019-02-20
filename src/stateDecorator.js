@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import ReactJson from 'react-json-view';
+import React, { useState } from 'react';
 import addons from '@storybook/addons';
 
 const stateDecorator = (initial, key = 'default') => {
