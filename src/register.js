@@ -25,9 +25,7 @@ export const register = () => {
         };
       });
   
-      return Object.keys(state).map(key => (
-        <ReactJson key={key} src={state[key]} name={key} />
-      ));
+      return <ReactJson src={state} name={false} />;
     };
   
     // Register the addon with a unique name.
