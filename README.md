@@ -12,19 +12,31 @@ USAGE:
 ```
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { stateDecorator } from '@jdachtera/storybook-simple-state';
+import { withState } from '@jdachtera/storybook-simple-state';
 
 import MyComponent from './MyComponent';
 
 
  storiesOf('<MyComponent>', module)
-  .addDecorator(stateDecorator('Hello World'))
+  .addDecorator(withState('Hello World'))
   .add('default', ({ default: [value, updateValue] }) => (
     <MyComponent
       value={value}
       onChange={updateValue}
     />
-  ));
+  ))
+  .add('another one', ({ value, setValue }) => (
+    <MyComponent
+      value={value}
+      onChange={setValue}
+    />
+  ))
+  .add('with individual state', withState('Another value', { value, setValue }) => (
+    <MyComponent
+      value={value}
+      onChange={setValue}
+    />
+  ))
 ```
 
 *.storybook/addons.js*
