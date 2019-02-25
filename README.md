@@ -12,7 +12,7 @@ USAGE:
 ```
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withState } from '@jdachtera/storybook-simple-state';
+import { withState, State } from '@jdachtera/storybook-simple-state';
 
 import MyComponent from './MyComponent';
 
