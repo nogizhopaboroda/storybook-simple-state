@@ -31,13 +31,23 @@ import MyComponent from './MyComponent';
       onChange={setValue}
     />
   ))
-  .add('with individual state', withState('Another value', { value, setValue }) => (
+  .add('with individual state', withState('Another value', ({ value, setValue }) => (
     <MyComponent
       value={value}
       onChange={setValue}
     />
+  )))
+  .add('use as a component', () => (
+    <State initial="Hello" render={({ value, setValue }) => (
+     <MyComponent
+       value={value}
+       onChange={setValue}
+     />
+    )}>
+    </State>
   ))
 ```
+
 
 *.storybook/addons.js*
 ```
