@@ -1,4 +1,4 @@
-import stateDecorator from "./stateDecorator";
+import stateDecorator, { State, withState } from "./stateDecorator";
 import { register } from "./register";
 
-export {stateDecorator, register}
+export {stateDecorator, State, withState, register}
